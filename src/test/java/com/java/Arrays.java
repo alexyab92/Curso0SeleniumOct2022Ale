@@ -34,6 +34,17 @@ public class Arrays {
         //4 Email
         // Imprimir el arreglo concatenando cada uno de los valores
 
+        String[] DatosPersonales = new String[7];
+        DatosPersonales[0] = "Alejandra";
+        DatosPersonales[1] = "Vallejo";
+        DatosPersonales[2] = "30";
+        DatosPersonales[3] = "alejandra@mail.com";
+
+        for (int i=0; i<4; i++)
+        {
+            System.out.print(DatosPersonales[i] + " ");
+        }
+
     }
 
 }
