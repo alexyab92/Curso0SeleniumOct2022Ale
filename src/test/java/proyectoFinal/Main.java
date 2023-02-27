@@ -41,11 +41,15 @@ public class Main {
 
         driver.findElement(By.xpath("//body/div/div/div[2]/div/div/div[2]/div/button")).click();
 
-        driver.findElement(By.xpath("//form/div/div/div/div/div/div/div")).click();
-        driver.findElement(By.xpath("//form/div/div/div/div/div/div/div/div[1]")).click();
+        driver.findElement(By.xpath("//div[@class='oxd-select-wrapper'][1]")).click();
+        driver.findElement(By.xpath("//div[@role='option' and @class='oxd-select-option']//span[contains(text(),\"Admin\")]")).click();
+        driver.findElement(By.xpath("//div[@class='oxd-select-wrapper'][3]")).click();
+        driver.findElement(By.xpath("//div[@role='option' and @class='oxd-select-option']//span[contains(text(),\"Enabled\")]")).click();
 
-       // Select userRole = new Select(driver.findElement(By.xpath("//form/div/div/div/div/div/div/div")));
-        //userRole.selectByVisibleText("Admin");
+        //driver.findElement(By.xpath("//input[@placeholder = 'Type for hints...']")).click();
+        //driver.findElement(By.xpath("//input[@placeholder = 'Type for hints...']")).sendKeys("Odis  Adalwin");
+        //driver.findElement(By.xpath("//div[@role='option' and @class='oxd-autocomplete-wrapper']//span[contains(text(),\"Odis  Adalwin\")]")).click();
+
 
 
     }
